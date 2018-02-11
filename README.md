@@ -4,7 +4,7 @@
 `UniboardArduinoEthernetHTTP.h` is the Uniboard HTTP client library, while `UniboardArduinoEthernetMQTT.h` is the Uniboard MQTT client library. With UniboardArduinoEthernetHTTP or UniboardArduinoEthernetMQTT, sending data to Uniboard system through HTTP or MQTT protocol would be pretty easy and simple.
 
 ## Usage of UniboardArduinoEthernetHTTP
-1. Install `UniboardArduinoEthernetHTTP.zip` in Arduino IDE, and install [Ethernet](http://www.arduino.cc/en/Reference/Ethernet) or [Ethernet2](https://github.com/adafruit/Ethernet2) library for corresponding chip requirement.
+1. Install `UniboardArduinoEthernetHTTP.zip` in Arduino IDE, and install [Ethernet](http://www.arduino.cc/en/Reference/Ethernet) or [Ethernet2](https://github.com/adafruit/Ethernet2) library in Arduino IDE's Library Manager for corresponding chip requirement.
 
 2. Include `UniboardArduinoEthernetHTTP.h` and send HTTP data:
 ```c
@@ -34,7 +34,7 @@ void loop()
 ```
 
 ## Usage of UniboardArduinoEthernetMQTT
-1. Install `UniboardArduinoEthernetMQTT.zip` in Arduino IDE, and install [Ethernet](http://www.arduino.cc/en/Reference/Ethernet) or [Ethernet2](https://github.com/adafruit/Ethernet2) library for corresponding chip requirement. Also, install [ArduinoMqtt](https://github.com/monstrenyatko/ArduinoMqtt) by Oleg Kovalenko in Arduino IDE's Library Manager, UniboardArduinoEthernetMQTT is based on [ArduinoMqtt](https://github.com/monstrenyatko/ArduinoMqtt).
+1. Install `UniboardArduinoEthernetMQTT.zip` in Arduino IDE, and install [Ethernet](http://www.arduino.cc/en/Reference/Ethernet) or [Ethernet2](https://github.com/adafruit/Ethernet2) library in Arduino IDE's Library Manager for corresponding chip requirement. Also, install [ArduinoMqtt](https://github.com/monstrenyatko/ArduinoMqtt) by Oleg Kovalenko in Arduino IDE's Library Manager, UniboardArduinoEthernetMQTT is based on [ArduinoMqtt](https://github.com/monstrenyatko/ArduinoMqtt).
 
 2. Include `UniboardArduinoEthernetMQTT.h` and send MQTT data:
 ```c
