@@ -11,14 +11,14 @@ UniboardArduinoEthernetMQTT mqttClient("25f6db34-9ff1-47f4-b7bb-3721cafb2e23");
 bool mqttConnected = false;
 
 void setup() {
-	Serial.begin(9600);
+    Serial.begin(9600);
 
-  if (Ethernet.begin(mac) == 0) {
-    Ethernet.begin(mac, ip); // Failed to use DHCP, switch to static IP config.
-  }
-  delay(1000);
+    if (Ethernet.begin(mac) == 0) {
+      Ethernet.begin(mac, ip); // Failed to use DHCP, switch to static IP config.
+    }
+    delay(1000);
 
-  mqttConnected = mqttClient.connectMQTT() == 0;
+    mqttConnected = mqttClient.connectMQTT() == 0;
 }
 
 void loop() {

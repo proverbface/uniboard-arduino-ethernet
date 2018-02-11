@@ -20,16 +20,16 @@ UniboardArduinoEthernetHTTP httpClient("25f6db34-9ff1-47f4-b7bb-3721cafb2e23");
 
 void setup()
 {
-  if (Ethernet.begin(mac) == 0) {
-    Ethernet.begin(mac, ip); // Failed to use DHCP, switch to static IP config.
-  }
-  delay(1000);
+    if (Ethernet.begin(mac) == 0) {
+        Ethernet.begin(mac, ip); // Failed to use DHCP, switch to static IP config.
+    }
+    delay(1000);
 }
 
 void loop()
 {
-  httpClient.http("59db5cd3d6021211cb346b0b", "{\"temp\":88.2, \"humidity\":29.8}");
-  delay(5000);
+    httpClient.http("59db5cd3d6021211cb346b0b", "{\"temp\":88.2, \"humidity\":29.8}");
+    delay(5000);
 }
 ```
 
@@ -53,12 +53,12 @@ bool mqttConnected = false;
 void setup() {
 	Serial.begin(9600);
 
-  if (Ethernet.begin(mac) == 0) {
-    Ethernet.begin(mac, ip); // Failed to use DHCP, switch to static IP config.
-  }
-  delay(1000);
+    if (Ethernet.begin(mac) == 0) {
+        Ethernet.begin(mac, ip); // Failed to use DHCP, switch to static IP config.
+    }
+    delay(1000);
 
-  mqttConnected = mqttClient.connectMQTT() == 0;
+    mqttConnected = mqttClient.connectMQTT() == 0;
 }
 
 void loop() {
