@@ -1,0 +1,4 @@
+UniboardArduinoEthernetMQTT	KEYWORD1
+connectMQTT			KEYWORD2
+mqtt				KEYWORD2
+disconnectMQTT			KEYWORD2
